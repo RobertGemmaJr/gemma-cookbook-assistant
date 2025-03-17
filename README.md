@@ -1,58 +1,86 @@
+# Gemma Cookbook: Personal Code Assistant
 
-# Welcome to the Gemma Cookbook
+This is a forked copy of Google Gemini's [Gemma Cookbook](https://github.com/google-gemini/gemma-cookbook) repository.
+
+> [!NOTE]  
+> This and following merges the original READMEs of the repository.
+
+## Personal AI Code Assistant with Gemma
+
+This code project let's you create your own, personal AI coding assistant with Gemma by wrapping the model in a web service and creating a Visual Studio Code extension to communicate with it.
+
+This project contains 2 sub-projects:
+
+| Project                                         | Description                                                                                                                      |
+| :---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [**gemma-web-service**](./gemma-web-service/)   | A Gemma 2 2B model wrapped in a simple web service written with Python and the FastAPI library.                                  |
+| [**pipet-code-agent-2**](./pipet-code-agent-2/) | Visual Studio Code extension written in Node.js that connects to the Gemma service to handle code generation and other requests. |
+
+### Resources
+
+- [Personal AI Code Assistant with Gemma](https://www.youtube.com/watch?v=YxhzozLH1Dk)
+
+## Welcome to the Gemma Cookbook
+
 This is a collection of guides and examples for [Google Gemma](https://ai.google.dev/gemma/).
 
-## Get started with the Gemma models
+### Get started with the Gemma models
+
 Gemma is a family of lightweight, generative artificial intelligence (AI) open models, built from the same research and technology used to create the Gemini models. The Gemma model family includes:
-* Gemma\
-  The core models of the Gemma family.
-  * [Gemma](https://ai.google.dev/gemma/docs/core/model_card)\
+
+- Gemma
+  - [Gemma](https://ai.google.dev/gemma/docs/core/model_card)\
     For a variety of text generation tasks and can be further tuned for specific use cases
-  * [Gemma 2](https://ai.google.dev/gemma/docs/core/model_card_2)\
+  - [Gemma 2](https://ai.google.dev/gemma/docs/core/model_card_2)\
     Higher-performing and more efficient, available in 2B, 9B, 27B parameter sizes
-  * [Gemma 3](https://ai.google.dev/gemma/docs/core/model_card_3)\
+  - [Gemma 3](https://ai.google.dev/gemma/docs/core/model_card_3)\
     Longer context window and handling text and image input, available in 1B, 4B, 12B and 27B parameter sizes
-* Gemma variants
-  * [CodeGemma](https://ai.google.dev/gemma/docs/codegemma)\
+- Gemma variants
+  - [CodeGemma](https://ai.google.dev/gemma/docs/codegemma)\
     Fine-tuned for a variety of coding tasks
-  * [PaliGemma](https://ai.google.dev/gemma/docs/paligemma/model-card)\
+  - [PaliGemma](https://ai.google.dev/gemma/docs/paligemma/model-card)\
     Vision Language Model\
     For a deeper analysis of images and provide useful insights
-  * [PaliGemma 2](https://ai.google.dev/gemma/docs/paligemma/model-card-2)\
+  - [PaliGemma 2](https://ai.google.dev/gemma/docs/paligemma/model-card-2)\
     VLM which incorporates the capabilities of the Gemma 2 models
-  * [RecurrentGemma](https://ai.google.dev/gemma/docs/recurrentgemma)\
+  - [RecurrentGemma](https://ai.google.dev/gemma/docs/recurrentgemma)\
     Based on [Griffin](https://arxiv.org/abs/2402.19427) architecture\
     For a variety of text generation tasks
-  * [ShieldGemma](https://ai.google.dev/gemma/docs/shieldgemma/model_card)\
+  - [ShieldGemma](https://ai.google.dev/gemma/docs/shieldgemma/model_card)\
     Fine-tuned for evaluating the safety of text prompt input and text output responses against a set of defined safety policies
-  * [ShieldGemma 2](https://ai.google.dev/gemma/docs/shieldgemma/model_card_2)\
+  - [ShieldGemma 2](https://ai.google.dev/gemma/docs/shieldgemma/model_card_2)\
     Fine-tuned on Gemma 3's 4B IT checkpoint for image safety classification
-  * [DataGemma](https://ai.google.dev/gemma/docs/datagemma)\
+  - [DataGemma](https://ai.google.dev/gemma/docs/datagemma)\
     Fine-tuned for using Data Commons to address AI hallucinations
 
 You can find the Gemma models on the Hugging Face Hub, Kaggle, Google Cloud Vertex AI Model Garden, and [ai.nvidia.com](https://ai.nvidia.com).
 
-## Table of Notebooks
-* [Gemma](Gemma/README.md)
-* [CodeGemma](CodeGemma/README.md)
-* [PaliGemma](PaliGemma/README.md)
-* [Workshops and technical talks](Workshops/README.md)
-* [Showcase complex end-to-end use cases](Demos/README.md)
-* [Gemma on Google Cloud](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/open-models) : GCP open models has additional notebooks for using Gemma
+### Table of Notebooks
 
-## Get help
+- [Gemma](Gemma/README.md)
+- [CodeGemma](CodeGemma/README.md)
+- [PaliGemma](PaliGemma/README.md)
+- [Workshops and technical talks](Workshops/README.md)
+- [Showcase complex end-to-end use cases](Demos/README.md)
+- [Gemma on Google Cloud](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/open-models) : GCP open models has additional notebooks for using Gemma
+
+### Get help
+
 Ask a Gemma cookbook-related question on the [developer forum](https://discuss.ai.google.dev/c/gemma/10), or open an [issue](https://github.com/google-gemini/gemma-cookbook/issues) on GitHub.
 
-## Wish list
+### Wish list
+
 If you want to see additional cookbooks implemented for specific features/integrations, please open a new issue with [“Feature Request” template](https://github.com/google-gemini/gemma-cookbook/issues/new?template=feature_request.yml).
 
 If you want to make contributions to the Gemma Cookbook project, you are welcome to pick any idea in the [“Wish List”](https://github.com/google-gemini/gemma-cookbook/labels/wishlist) and implement it.
 
-## Contributing
+### Contributing
+
 Contributions are always welcome. Please read [contributing](https://github.com/google-gemini/gemma-cookbook/blob/main/CONTRIBUTING.md) before implementation.
 
 Thank you for developing with Gemma! We’re excited to see what you create.
 
-## Translation of this repository
-* [Traditional Chinese](https://github.com/doggy8088/gemma-cookbook)
-* [Simplified Chinese](https://github.com/xiaoxiong1006/gemma-cookbook)
+### Translation of this repository
+
+- [Traditional Chinese](https://github.com/doggy8088/gemma-cookbook)
+- [Simplified Chinese](https://github.com/xiaoxiong1006/gemma-cookbook)
