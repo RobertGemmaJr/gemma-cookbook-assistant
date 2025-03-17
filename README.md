@@ -2,6 +2,24 @@
 
 This is a forked copy of Google Gemini's [Gemma Cookbook](https://github.com/google-gemini/gemma-cookbook) repository.
 
+> [!NOTE]  
+> This and following merges the original READMEs of the repository.
+
+## Personal AI Code Assistant with Gemma
+
+This code project let's you create your own, personal AI coding assistant with Gemma by wrapping the model in a web service and creating a Visual Studio Code extension to communicate with it.
+
+This project contains 2 sub-projects:
+
+| Project                                         | Description                                                                                                                      |
+| :---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [**gemma-web-service**](./gemma-web-service/)   | A Gemma 2 2B model wrapped in a simple web service written with Python and the FastAPI library.                                  |
+| [**pipet-code-agent-2**](./pipet-code-agent-2/) | Visual Studio Code extension written in Node.js that connects to the Gemma service to handle code generation and other requests. |
+
+### Resources
+
+- [Personal AI Code Assistant with Gemma](https://www.youtube.com/watch?v=YxhzozLH1Dk)
+
 ## Welcome to the Gemma Cookbook
 
 This is a collection of guides and examples for [Google Gemma](https://ai.google.dev/gemma/).
