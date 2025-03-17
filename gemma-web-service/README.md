@@ -17,11 +17,7 @@ sudo apt install git pip python3-venv
 
 ### Install Python libraries
 
-Install the Python libraries with the `venv` Python virtual environment
-activated to manage Python packages and dependencies. Make sure you activate the
-Python virtual environment *before* installing Python libraries with the `pip`
-installer. For more information about using Python virtual environments, see the
-[Python venv](https://docs.python.org/3/library/venv.html) documentation.
+Install the Python libraries with the `venv` Python virtual environment activated to manage Python packages and dependencies. Make sure you activate the Python virtual environment *before* installing Python libraries with the `pip` installer. For more information about using Python virtual environments, see the [Python venv](https://docs.python.org/3/library/venv.html) documentation.
 
 To install the Python libraries:
 
@@ -31,14 +27,20 @@ To install the Python libraries:
         cd gemma-web-service/
     ```
 
-2. Configure and activate Python virtual environment (venv) for this project:
+2. Activate conda:
+
+    ```shell
+    conda activate
+    ```
+
+3. Configure and activate Python virtual environment (venv) for this project:
 
     ```shell
     python3 -m venv venv
     source venv/bin/activate
     ```
 
-3. Install the required Python libraries for this project using the `setup_python` script:
+4. Install the required Python libraries for this project using the `setup_python` script:
 
     ```shell
     ./setup_python.sh
