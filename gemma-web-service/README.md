@@ -82,7 +82,7 @@ To run and test the project:
 1. In a terminal window, navigate to the `gemma-web-service` directory:
 
     ```shell
-    cd personal-code-assistant/gemma-web-service/
+    cd gemma-web-service/
     ```
 
 2. Run the application using the `run_service` script:
