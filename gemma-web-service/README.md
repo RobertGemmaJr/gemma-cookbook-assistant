@@ -102,3 +102,8 @@ To run and test the project:
     ```shell
     ./test/test_post.sh
     ```
+
+<!-- TODO
+- Need to enable GPU support in WSl (.wslconfig)
+- Enabling the GPU breaks the normal GUI apps in WSL
+-->
